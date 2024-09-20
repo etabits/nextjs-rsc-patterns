@@ -6,6 +6,15 @@ export default function Home() {
     <div>
       <div className="prose prose-invert">
         <h1>RSCs &lt;-&gt; Client Components Patterns</h1>
+        <p>
+          Source-code:{" "}
+          <a
+            href="https://github.com/etabits/nextjs-rsc-patterns"
+            target="_blank"
+          >
+            etabits/nextjs-rsc-patterns
+          </a>
+        </p>
       </div>
       <Suspense fallback={"Loading patterns..."}>
         <PatternsList />
