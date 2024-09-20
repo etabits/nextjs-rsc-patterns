@@ -27,6 +27,7 @@ const patterns: Record<string, string> = {
   rendered: "Pass rendered server component to a client component via a prop",
   import: "Pass imported client component reference to RSC via a prop",
   c2c: "Pass a client component to another client component, composed in an RSC",
+  handlers: "Assigning client-side event handlers directly from RSCs",
 };
 
 const PatternsList: React.FC = () => {
