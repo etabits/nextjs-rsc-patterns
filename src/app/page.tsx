@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <div className="prose prose-invert">
+      <div className="prose dark:prose-invert">
         <h1>RSCs &lt;-&gt; Client Components Patterns</h1>
         <p>
           Source-code:{" "}

@@ -25,6 +25,6 @@ pre {
   white-space: wrap;
 }
 
-.prose a, nav a {
+.prose a, nav a, .prose-lg a {
   text-decoration: underline;
 }
