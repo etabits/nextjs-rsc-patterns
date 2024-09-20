@@ -23,6 +23,9 @@ body {
 
 pre {
   white-space: wrap;
+  border: 2px inset #888;
+  margin: 4px 0 !important;
+  padding: 8px !important;
 }
 
 .prose a, nav a, .prose-lg a {

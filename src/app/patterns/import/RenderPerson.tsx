@@ -9,7 +9,7 @@ const RenderPerson: React.FC<Person> = ({ name, age }) => {
   return (
     <div
       onClick={() => setAgeRevealed((r) => !r)}
-      className={`cursor-pointer border rounded-sm inline p-2 m-4 ${
+      className={`cursor-pointer border rounded-sm inline p-2 m-4 text-center ${
         ageRevealed ? "border-solid" : "border-dotted"
       }`}
     >

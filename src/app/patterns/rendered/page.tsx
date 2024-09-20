@@ -5,12 +5,12 @@ import ServerIP from "./ServerIP";
 const RenderedPatternPage: NextPage = () => {
   return (
     <>
-      <div className="prose-lg dark:prose-invert">
+      <div className="prose prose-lg dark:prose-invert">
         <h1>Passing RSCs into Client Components</h1>
         <p>
-          We have a server component (ServerIP) that is rendered (invoked,
-          {" <ServerIP />"}) and passed as a ReactNode prop to a client
-          component (ClientWrapper).
+          We have a server component (<code>ServerIP</code>) that is rendered
+          (invoked, <code>{"<ServerIP />"}</code>) and passed as a ReactNode
+          prop to a client component (<code>ClientWrapper</code>).
         </p>
         <p>
           <a

@@ -9,7 +9,7 @@ type ListPeopleProps = {
 
 const getPeople = async (): Promise<Person[]> => [
   { name: "Sarah", age: 23 },
-  { name: "Danial", age: 29 },
+  { name: "Dani", age: 29 },
   { name: "Sam", age: 31 },
 ];
 

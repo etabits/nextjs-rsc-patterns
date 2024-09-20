@@ -10,7 +10,7 @@ const HandlerPatternPage: NextPage = () => {
         <h1>Passing a client event handler directly from an RSC</h1>
         <p>
           While you cannot directly use inline handlers in RSCs, you may pass
-          ones imported from `'use client';` files. I used to have an
+          ones imported from <code>'use client';</code> files. I used to have an
           intermediary client component before I figured out this is possible.
         </p>
         <p>

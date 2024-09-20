@@ -4,21 +4,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <div className="prose dark:prose-invert">
+      <div className="prose prose-lg dark:prose-invert">
         <h1>RSCs &lt;-&gt; Client Components Patterns</h1>
         <p>
-          Source-code:{" "}
-          <a
-            href="https://github.com/etabits/nextjs-rsc-patterns"
-            target="_blank"
-          >
-            etabits/nextjs-rsc-patterns
-          </a>
+          Except for the first pattern, I came across these while experimenting
+          but have not found it in upstream docs. Please add a link
+          (pull-request) if you do.
         </p>
       </div>
-      <Suspense fallback={"Loading patterns..."}>
-        <PatternsList />
-      </Suspense>
+      <PatternsList />
     </div>
   );
 }
@@ -34,8 +28,11 @@ const PatternsList: React.FC = () => {
   return (
     <ol className="flex flex-col justify-center mt-10 list-decimal">
       {Object.entries(patterns).map(([slug, label]) => (
-        <li key={slug} className="mb-12">
-          <Link href={`/patterns/${slug}`} className="border rounded p-4">
+        <li key={slug} className="mb-4">
+          <Link
+            href={`/patterns/${slug}`}
+            className="border rounded p-2 inline-block"
+          >
             {label}
           </Link>
         </li>
