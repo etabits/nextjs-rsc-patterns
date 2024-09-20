@@ -1,7 +1,8 @@
 import RenderPerson from "./RenderPerson";
 import ListPeople from "./ListPeople";
+import type { NextPage } from "next";
 
-const ImportPagePattern: React.FC = () => {
+const ImportPatternPage: NextPage = () => {
   return (
     <div>
       <div className="prose-lg dark:prose-invert">
@@ -29,4 +30,4 @@ const ImportPagePattern: React.FC = () => {
   );
 };
 
-export default ImportPagePattern;
+export default ImportPatternPage;

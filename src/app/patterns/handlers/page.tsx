@@ -1,8 +1,9 @@
+import type { NextPage } from "next";
 import { changePageBackground } from "./change-bg";
 import { incrementMe } from "./increment";
 import { tellIP } from "./tell-ip";
 
-const ClientHandlerPage: React.FC = () => {
+const HandlerPatternPage: NextPage = () => {
   return (
     <div>
       <div className="prose prose-lg dark:prose-invert">
@@ -73,4 +74,4 @@ const ClientHandlerPage: React.FC = () => {
   );
 };
 
-export default ClientHandlerPage;
+export default HandlerPatternPage;

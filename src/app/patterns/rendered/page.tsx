@@ -1,7 +1,8 @@
+import type { NextPage } from "next";
 import ClientWrapper from "./ClientWrapper";
 import ServerIP from "./ServerIP";
 
-const RenderedPatternPage: React.FC = () => {
+const RenderedPatternPage: NextPage = () => {
   return (
     <>
       <div className="prose-lg dark:prose-invert">
