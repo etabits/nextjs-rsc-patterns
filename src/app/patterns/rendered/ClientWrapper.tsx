@@ -22,8 +22,7 @@ const ClientWrapper: React.FC<{ children: ReactNode }> = ({ children }) => {
     <div
       onMouseMove={onMouseMove}
       style={{
-        minHeight: "50vh",
-        margin: "24px",
+        marginTop: "24px",
         border: "2px solid #ccc",
         padding: "8px",
       }}

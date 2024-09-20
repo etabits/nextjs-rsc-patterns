@@ -1,11 +1,12 @@
 import { Suspense } from "react";
-import { readdir } from "fs/promises";
-import { dirname, join } from "path";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
+      <div className="prose prose-invert">
+        <h1>RSCs &lt;-&gt; Client Components Patterns</h1>
+      </div>
       <Suspense fallback={"Loading patterns..."}>
         <PatternsList />
       </Suspense>
@@ -13,22 +14,20 @@ export default function Home() {
   );
 }
 
-const labels: Record<string, string> = {
+const patterns: Record<string, string> = {
   rendered: "Pass rendered server component to a client component via a prop",
 };
 
-const PatternsList: React.FC = async () => {
-  console.log();
-  const patterns = await readdir(
-    join(dirname(new URL(import.meta.url).pathname), "patterns")
-  );
+const PatternsList: React.FC = () => {
   return (
-    <ul>
-      {patterns.map((p) => (
-        <li key={p}>
-          <Link href={`/patterns/${p}`}>{labels[p] ?? p}</Link>
+    <ol className="flex flex-col justify-center mt-10 list-decimal">
+      {Object.entries(patterns).map(([slug, label]) => (
+        <li key={slug} className="mb-12">
+          <Link href={`/patterns/${slug}`} className="border rounded p-4">
+            {label}
+          </Link>
         </li>
       ))}
-    </ul>
+    </ol>
   );
 };

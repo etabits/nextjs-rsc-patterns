@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ReactNode } from "react";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Next.js RSC Patterns",
@@ -15,6 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <header>
+          <nav>
+            <Link href="/">Patterns list</Link>
+          </nav>
+        </header>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>{children}</div>
       </body>
     </html>

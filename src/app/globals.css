@@ -18,8 +18,13 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
 }
 
 pre {
   white-space: wrap;
+}
+
+.prose a, nav a {
+  text-decoration: underline;
 }
