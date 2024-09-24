@@ -31,3 +31,7 @@ pre {
 .prose a, nav a, .prose-lg a {
   text-decoration: underline;
 }
+
+.prose code {
+  white-space: nowrap;
+}

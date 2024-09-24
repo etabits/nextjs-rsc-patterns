@@ -9,7 +9,8 @@ const RenderedPatternPage: NextPage = () => {
         <h1>Passing RSCs into Client Components</h1>
         <p>
           We have a server component (<code>ServerIP</code>) that is rendered
-          (invoked, <code>{"<ServerIP />"}</code>) and passed as a ReactNode
+          (invoked, <code>{"<ServerIP />"}</code>) and passed as a{" "}
+          <code>ReactNode</code>
           prop to a client component (<code>ClientWrapper</code>).
         </p>
         <p>
